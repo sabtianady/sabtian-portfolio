@@ -6,7 +6,7 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://mojila.my.id/</loc>
+    <loc>https://sabtianady.my.id/</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,48 +14,48 @@
   
   <!-- About Page -->
   <url>
-    <loc>https://mojila.my.id/about</loc>
-    <lastmod>2024-01-15</lastmod>
+    <loc>https://sabtianady.my.id/about</loc>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Skills Section -->
   <url>
-    <loc>https://mojila.my.id/#skills</loc>
-    <lastmod>2024-01-15</lastmod>
+    <loc>https://sabtianady.my.id/#skills</loc>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Work Experience Section -->
   <url>
-    <loc>https://mojila.my.id/#experience</loc>
-    <lastmod>2024-01-15</lastmod>
+    <loc>https://sabtianady.my.id/#experience</loc>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Projects Section -->
   <url>
-    <loc>https://mojila.my.id/#projects</loc>
-    <lastmod>2024-01-15</lastmod>
+    <loc>https://sabtianady.my.id/#projects</loc>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Contact Section -->
   <url>
-    <loc>https://mojila.my.id/#contact</loc>
-    <lastmod>2024-01-15</lastmod>
+    <loc>https://sabtianady.my.id/#contact</loc>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <!-- Resume PDF -->
   <url>
-    <loc>https://mojila.my.id/asset/resume.pdf</loc>
-    <lastmod>2024-01-15</lastmod>
+    <loc>https://sabtianady.my.id/asset/resume.pdf</loc>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>quarterly</changefreq>
     <priority>0.5</priority>
   </url>
