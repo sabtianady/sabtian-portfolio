@@ -15,12 +15,8 @@ const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const images = [
-    '/asset/photo.jpeg',
     '/asset/photo_1.jpg',
-    '/asset/photo_2.jpg',
-    '/asset/photo_3.png',
-    '/asset/photo_4.png',
-    '/asset/photo_5.png'
+    '/asset/photo_2.jpg'
   ];
 
   useEffect(() => {
@@ -93,7 +89,7 @@ const HomePage = () => {
           <button 
             onClick={() => setShowPDFViewer(true)}
             className="inline-flex items-center px-3 py-2 bg-white hover:bg-gray-100 text-black text-sm font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
-            aria-label="View Mojila's portfolio resume"
+            aria-label="View Sabtian's portfolio resume"
           >
             <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -103,7 +99,7 @@ const HomePage = () => {
           <Link 
             to="/about"
             className="inline-flex items-center px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
-            aria-label="Learn more about Mojila's portfolio"
+            aria-label="Learn more about Sabtian's portfolio"
           >
             About Me
           </Link>
@@ -112,7 +108,7 @@ const HomePage = () => {
         <div className="flex items-center space-x-4">
           <img 
             src="/asset/logo.jpg" 
-            alt="Mojila Logo" 
+            alt="Sabtian Logo" 
             className="w-12 h-12 sm:w-16 sm:h-16 md:w-12 md:h-12 rounded-full object-cover shadow-lg border-2 border-white"
             loading="lazy"
           />
@@ -153,19 +149,6 @@ const HomePage = () => {
           borderRadius: '50%',
         }}
       />
-      
-      {/* Video Resume - Hidden on mobile, bottom-left on desktop */}
-      <div className="hidden md:block absolute md:bottom-4 md:left-4 z-10">
-        <video 
-          className="w-32 h-24 sm:w-40 sm:h-30 md:w-48 md:h-36 rounded-lg shadow-lg"
-          controls
-          preload="metadata"
-          aria-label="Mojila's portfolio video resume"
-        >
-          <source src="/asset/video-resume.mov" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
       
       {/* Main Content */}
        <main className="h-full flex items-center justify-center">
