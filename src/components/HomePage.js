@@ -1,69 +1,52 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import React from "react";
+import { motion } from "framer-motion";
 
-export default function HomePage() {
+const Homepage = () => {
+  const handleOpenPDF = (pdfPath) => {
+    window.open(pdfPath, "_blank");
+  };
+
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen px-6 py-12 bg-gray-50">
-      <div className="max-w-3xl w-full">
-        <Card className="rounded-2xl shadow-lg p-6 bg-white">
-          <CardContent className="flex flex-col items-center text-center gap-6">
-            <Image
-              src="/assets/photo_1.png"
-              alt="Sabtian Adiansyah"
-              width={160}
-              height={160}
-              className="rounded-full border border-gray-200 shadow-sm"
-              priority
-            />
-            <div>
-              <h1 className="text-3xl font-bold text-gray-900">Sabtian Adiansyah</h1>
-              <p className="text-gray-600 mt-2">Sales Development Representative | Dealls</p>
-            </div>
-            <div className="text-gray-700 text-base leading-relaxed">
-              <p>
-                Saya adalah seorang SDR berpengalaman dengan spesialisasi dalam memprospek dan nurturing leads di industri B2B SaaS. Saat ini bekerja di Dealls, saya fokus menghubungkan talent terbaik dengan perusahaan impian mereka.
-              </p>
-              <p className="mt-4">
-                Portfolio ini menyajikan beberapa proyek, pencapaian, dan pemikiran saya terkait strategi penjualan modern, pemanfaatan teknologi dalam prospekting, serta pemahaman mendalam terhadap pasar rekrutmen Indonesia.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 mt-6">
-              <a href="/assets/CV Sabtian Adiansyah.pdf" download>
-                <Button variant="default" className="px-6 py-2">
-                  Download CV
-                </Button>
-              </a>
-              <a
-                href="https://wa.me/6281234567890"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button variant="outline" className="px-6 py-2">
-                  Hubungi via WhatsApp
-                </Button>
-              </a>
-            </div>
-          </CardContent>
-        </Card>
+    <div className="flex flex-col items-center justify-center min-h-screen py-10 px-4 bg-gray-100">
+      <h1 className="text-4xl font-bold text-center mb-6">Welcome to Our Portfolios</h1>
+      <p className="text-lg text-center mb-10 max-w-xl">
+        Explore the professional portfolios of our talented team members. Click the buttons below to view each portfolio in a new tab.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <h2 className="text-2xl font-semibold mb-2">Sabtian's Portfolio</h2>
+          <p className="text-center mb-4">
+            Discover Sabtian's work, skills, and accomplishments in software engineering.
+          </p>
+          <button
+            onClick={() => handleOpenPDF("/Sabtian_Portfolio.pdf")}
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+          >
+            View Portfolio
+          </button>
+        </motion.div>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <Image
-            src="/assets/photo_2.png"
-            alt="Photo 2"
-            width={600}
-            height={400}
-            className="rounded-xl shadow-md object-cover"
-          />
-          <Image
-            src="/assets/logo.png"
-            alt="Logo"
-            width={600}
-            height={400}
-            className="rounded-xl shadow-md object-contain bg-white p-6"
-          />
-        </div>
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <h2 className="text-2xl font-semibold mb-2">Mojila's Portfolio</h2>
+          <p className="text-center mb-4">
+            Explore Mojila's creative portfolio and her experience in UI/UX design.
+          </p>
+          <button
+            onClick={() => handleOpenPDF("/Mojila_Portfolio.pdf")}
+            className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+          >
+            View Portfolio
+          </button>
+        </motion.div>
       </div>
-    </main>
+    </div>
   );
-}
+};
+
+export default Homepage;
