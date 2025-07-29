@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  mojila-portfolio:
+    build:
+      context: .
+      args:
+        API_KEY: ${API_KEY}
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    container_name: mojila-portfolio
+    env_file:
+      - .env
